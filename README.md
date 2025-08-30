@@ -1,12 +1,39 @@
-# React + Vite
+# Amplify - React + Vite App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack web app built with React (Vite), AWS Amplify Gen 2, providing:
 
-Currently, two official plugins are available:
+- **Frontend**: React + Vite
+- **Data backend**: Amplify Data (TypeScript-first schema, real-time API + DynamoDB integration).
+- **Auth & Permissions**: model-level and function-level authorization with API Key, Cognito, or Lambda policies.
+- **Serverless triggers**: Lambda function invoked post-user-signup via an authorization rule.
+- **Live updates**: Real-time subscriptions auto-generated for `a.model()`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+##  Setup & Usage
+Read and follow documentation guide:
+https://aws.amazon.com/getting-started/hands-on/build-web-app-s3-lambda-api-gateway-dynamodb/?ref=gsrchandson 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Summary
+
+This project structure enables:
+
+* Type-safe, real-time backend via Amplify Data
+* Flexible auth rules (API Key, Cognito, Lambda)
+* Automatic database + GraphQL API provisioning
+* Lambda-triggered workflows (e.g., post-registration)
+* Live frontend updates
+
+---
+
+### Quick Commands
+
+| Task           | Command            |
+| -------------- | ------------------ |
+| Start sandbox  | `npx ampx sandbox` |
+| Deploy backend | `amplify push`     |
+| Run dev server | `npm run dev`      |
+
+---
