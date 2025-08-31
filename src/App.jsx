@@ -64,7 +64,7 @@ export default function App() {
 
           <div className="card">
             <h3>Assignments</h3>
-            <p>2 due this week</p>
+            <p>10,000 due this week only from Promise and William!</p>
             <button className="view-btn">Check Assignments</button>
           </div>
 
@@ -80,17 +80,47 @@ export default function App() {
           <h2>Course Highlights</h2>
           <div className="highlight-grid">
             <div className="highlight">
-              <h4>Cloud Computing 101</h4>
-              <p>Next lecture: Tomorrow 10AM</p>
+              <h4>AWS Amplify, AppSync, DynamoDB</h4>
+              <p><strong>Cloud Connect: </strong>Tomorrow 8AM</p>
             </div>
             <div className="highlight">
-              <h4>Serverless with AWS</h4>
-              <p>Assignment due: Friday</p>
+              <h4>DEI In The Workplace</h4>
+              <p><strong>Career Sessions: </strong>  
+                Every Mondays and Wednesdays at 8: 30AM</p>
             </div>
             <div className="highlight">
-              <h4>DevOps Basics</h4>
-              <p>Quiz opens: Saturday</p>
+              <h4>AWS High Level Architecture Solution In Cloud</h4>
+              <p>Available on Thinkific: Monday</p>
             </div>
+          </div>
+        </section>
+
+        {/* Activity Cards */}
+        <div className="activity-header">
+          <h2>Extra Curriculum Activities</h2>
+        </div>
+        <section className="dashboard-grid">
+          <div className="card">
+            <h3>Career Workshops</h3>
+            <p><strong>Tasks:</strong> Resume Submission, Application Tracker</p>
+            <button className="view-btn">View Tasks</button>
+          </div>
+
+          <div className="card">
+            <h3>Mentor Check-Ins</h3>
+            <p>2 due this month</p>
+            <p><strong><a href=
+              "https://outlook.office.com/book/G681a4ec1a0b9428488fb5af0697afc61@azubiafrica.org/?ismsaljsauthenabled=true"
+               noreferrer target="_blank">1-on-1-BOOKING-GEN</a></strong></p>
+            <button className="success-btn">View Calendar</button>
+          </div>
+
+          <div className="card">
+            <h3>Student Dashboard</h3>
+            <strong><a href="https://learnerportal.generation.org/" target="_blank">
+            View Your Performance</a></strong>
+            <p>65% completed</p>
+            <button className="success-btn">Enter Portal</button>
           </div>
         </section>
 
@@ -102,7 +132,7 @@ export default function App() {
               {userprofiles.map((profile) => (
                 <div className="profile-card" key={profile.id}>
                   <h4>{profile.email}</h4>
-                  <p>Owner: {profile.profileOwner || "N/A"}</p>
+                  <p>User ID: {profile.profileOwner || "No Owner"}</p>
                 </div>
               ))}
             </div>

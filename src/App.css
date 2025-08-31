@@ -70,6 +70,11 @@ body, html, #root {
   background: #dc2626;
 }
 
+/* Dashboard Cards */
+.dashboard-grid h3, p {
+  color: rgb(41, 41, 41);
+}
+
 /* Cards */
 .dashboard-grid {
   display: grid;
@@ -89,9 +94,30 @@ body, html, #root {
   margin-top: 0;
 }
 
+.card a {
+  text-decoration: none;
+  color: #1e459a;
+}
+
+.card a:hover {
+  text-decoration: underline;
+  color: #0051ff;
+}
+
 .view-btn {
   margin-top: 10px;
   background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.success-btn {
+  margin-top: 10px;
+  background: #0fc21b;
   color: white;
   border: none;
   padding: 8px 12px;
@@ -104,7 +130,14 @@ body, html, #root {
   background: #2563eb;
 }
 
+.success-btn:hover {
+  background: #45a330;
+}
+
 /* Highlights */
+.course-highlights {
+  margin-bottom: 45px;
+}
 .course-highlights h2 {
   color: rgb(35, 32, 32);
   margin-bottom: 15px;
@@ -121,4 +154,14 @@ body, html, #root {
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0px 2px 5px rgba(0,0,0,0.08);
+}
+
+/* Activity Cards Header */
+.activity-header h2 {
+  color: rgb(35, 32, 32);
+}
+
+/* Profiles (from Amplify DB) */
+.profiles-section h2, h4, p {
+  color: rgb(41, 41, 41);
 }
