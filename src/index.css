@@ -33,3 +33,28 @@
 .box:nth-child(3n + 3) {
   grid-column: 3;
 }
+
+.App {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #fff;
+  background-color: #1a1a1a;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.profile-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  object-fit: cover;
+}

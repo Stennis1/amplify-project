@@ -1,5 +1,7 @@
 # Amplify - React + Vite App
 
+
+## Project Overview
 A full-stack web app built with React (Vite), AWS Amplify Gen 2, providing:
 
 - **Frontend**: React + Vite
@@ -11,10 +13,33 @@ A full-stack web app built with React (Vite), AWS Amplify Gen 2, providing:
 ---
 
 ##  Setup & Usage
-Read and follow documentation guide:
-https://aws.amazon.com/getting-started/hands-on/build-web-app-s3-lambda-api-gateway-dynamodb/?ref=gsrchandson 
 
+### OPTION A - Using Deployment Guide (*Advised if you want to build the project*) 
+- Read and follow [documentation guide](https://aws.amazon.com/getting-started/hands-on/build-web-app-s3-lambda-api-gateway-dynamodb/?ref=gsrchandson) to build and deploy application  
 ---
+
+### OPTION B - Installation/Running Project from This Repository
+
+1. **Clone the repository**.
+
+```bash
+git clone https://github.com/Stennis1/profilesapp.git
+cd project_dir
+```
+
+2. **Set up dev environment**.
+
+- Install **Node.JS** and **npm**(*if not already installed*). 
+```bash
+# install node packages 
+npm install
+```
+
+3. **Run the environment locally**.
+
+```bash
+npm run dev
+```
 
 ## Summary
 
@@ -37,3 +62,14 @@ This project structure enables:
 | Run dev server | `npm run dev`      |
 
 ---
+
+## Contributing
+
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature/my-feature`).
+3. Commit changes (`git commit -m "Add feature description"`).
+4. Push change (`git push origin feature/my-feature`).
+5. Open a pull request.
+
+## License
+This project is licensed under the MIT License. See [LICENSE](https://opensource.org/license/mit) for details.
