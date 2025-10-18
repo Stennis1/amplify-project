@@ -8,9 +8,52 @@ A full-stack web app built with React (Vite), AWS Amplify Gen 2, providing:
 - **Data backend**: Amplify Data (TypeScript-first schema, real-time API + DynamoDB integration).
 - **Auth & Permissions**: model-level and function-level authorization with API Key, Cognito, or Lambda policies.
 - **Serverless triggers**: Lambda function invoked post-user-signup via an authorization rule.
-- **Live updates**: Real-time subscriptions auto-generated for `a.model()`
 
----
+# 🎬 CineStream - Movie Streaming Platform
+
+A modern, responsive movie streaming platform built with React and AWS Amplify, featuring real-time movie data, user profiles, and theme customization.
+
+![CineStream Demo](https://img.shields.io/badge/CineStream-Movie%20Platform-red) ![React](https://img.shields.io/badge/React-18.2-blue) ![AWS Amplify](https://img.shields.io/badge/AWS-Amplify-orange)
+
+## ✨ Features
+- **Video Player**: Embedded YouTube trailer playback
+- **Watchlist Management**: Add/remove movies from personal watchlist
+- **User Profiles**: AWS Amplify-powered user authentication and profiles
+- **Responsive Design**: Mobile-first design that works on all devices
+
+### 🎨 User Experience
+- **Light/Dark Theme Toggle**: Seamless theme switching with persistent preferences
+- **Modern UI**: Glass-morphism design with smooth animations
+- **Movie Discovery**: Trending, popular, and featured movie sections
+- **Interactive Cards**: Hover effects and visual feedback
+
+### 🔧 Technical Features
+- **AWS Amplify Backend**: User authentication and data management
+- **Local Storage**: Theme preferences and watchlist persistence
+- **Error Handling**: Graceful fallbacks for program failures
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+- AWS Account (for Amplify)
+
+## 📁 Project Structure
+
+```
+cinestream/
+├── public/
+│   ├── index.html
+│   └── logo.png
+├── src/
+│   ├── components/
+│   │   ├── App.jsx
+│   │   └── index.css
+│   ├── amplify_outputs.json
+│   └── index.js
+└── package.json
+```
 
 ##  Setup & Usage
 
@@ -23,7 +66,7 @@ A full-stack web app built with React (Vite), AWS Amplify Gen 2, providing:
 1. **Clone the repository**.
 
 ```bash
-git clone https://github.com/Stennis1/profilesapp.git
+git clone https://github.com/<github-name>.git
 cd project_dir
 ```
 
