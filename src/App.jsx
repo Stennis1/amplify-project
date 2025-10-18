@@ -125,7 +125,8 @@ export default function App() {
     const trailerSearch = `${movie.title} official trailer`;
     setCurrentVideo({
       title: movie.title,
-      videoUrl: `https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1`, // Demo URL
+      videoUrl: `https://www.youtube.com/embed/kaBffJ1HxTQ?si=2SPaGZOlNfQEgNfw?autoplay=1`,
+      // videoUrl: `https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1`,
       description: movie.overview
     });
     setIsPlaying(true);
@@ -375,7 +376,7 @@ export default function App() {
         {/* User Profiles */}
         {userprofiles.length > 0 && (
           <section className="profiles-section">
-            <h2>User Profiles</h2>
+            <h2>User Profile</h2>
             <div className="profiles-grid">
               {userprofiles.map((profile) => (
                 <div className="profile-card" key={profile.id}>
